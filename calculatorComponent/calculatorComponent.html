@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="Calculator DIY2">
+        <div class="slds-p-around_medium">
+            <lightning-input label="Enter Number 1" type="number" onchange={handleNumberChange}></lightning-input>
+            <lightning-input label="Enter Number 2" type="number" onchange={handleNumberChange}></lightning-input>
+            <div class="slds-m-top_medium">
+                
+                <lightning-button variant="brand" label="Add" onclick={handleAdd}></lightning-button>
+                <lightning-button variant="brand" label="Subtract" onclick={handleSubtract}></lightning-button>
+                <lightning-button variant="brand" label="Multiply" onclick={handleMultiply}></lightning-button>
+                <lightning-button variant="brand" label="Divide" onclick={handleDivide}></lightning-button>
+                
+            </div>
+            <div class="slds-m-top_medium">
+                <p>Result: {result}</p>
+            </div>
+        </div>
+    </lightning-card>
+</template>
